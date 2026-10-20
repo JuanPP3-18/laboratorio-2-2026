@@ -11,8 +11,8 @@
 
 # Integrantes del Grupo
 
-- Estudiante 1 (Legajo 1)
-- Estudiante 2 (Legajo 2)
+- Juan P - 89
+- Alexis N - 48
 
 ---
 
