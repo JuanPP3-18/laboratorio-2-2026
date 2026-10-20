@@ -1,13 +1,23 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
+import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
+
 import java.util.*;
 
 public class CatalogoArtefactos {
-
+    private EstrategiaDeMejora estrategia;
     private final Set<Artefacto> artefactos;
 
     // Constructor por defecto (Compatibilidad Labo 1)
     public CatalogoArtefactos() {
+        this.artefactos = new HashSet<>();
+    }
+
+    public CatalogoArtefactos(EstrategiaDeMejora estrategia){
+        if (estrategia == null){
+            throw new IllegalArgumentException("no se puede");
+        }
+        this.estrategia = estrategia;
         this.artefactos = new HashSet<>();
     }
 
@@ -19,6 +29,10 @@ public class CatalogoArtefactos {
         if (artefacto != null) {
             this.artefactos.add(artefacto);
         }
+    }
+
+    //LABO 2
+    public void aplicarMejoras(){
     }
 
     public Set<Artefacto> obtenerArtefactosUnicos() {
